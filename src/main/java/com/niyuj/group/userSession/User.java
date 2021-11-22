@@ -8,6 +8,9 @@ public class User {
 		return "User [username=" + username + ", token=" + token + ", homeDir=" + homeDir + ", pwd=" + pwd + "]";
 	}
 	private  String username;
+	private String token;
+	private String homeDir;
+	private String pwd;
 	public String getUsername() {
 		return username;
 	}
@@ -32,15 +35,16 @@ public class User {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-	private String token;
-	private String homeDir;
-	private String pwd;
+	
 	public User(String username, String token, String homeDir, String pwd) {
 		super();
 		this.username = username;
 		this.token = token;
 		this.homeDir = homeDir;
 		this.pwd = pwd;
+	}
+	public User() {
+		
 	}
 	
 	
